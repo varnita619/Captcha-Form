@@ -1,0 +1,27 @@
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  border-bottom: 1px solid gray;
+  width: 100%;
+}
+
+.theme-btn {
+  align-items: center;
+  padding: 10px 15px;
+  border: none;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  width: 50px;
+  height: 40px;
+}
+
+.theme-img {
+  width: 20px;
+  height: 20px;
+}
