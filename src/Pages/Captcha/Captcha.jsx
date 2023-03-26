@@ -26,13 +26,14 @@ function Captcha({ theme }) {
   function generateString(length) {
     setLoading(true);
     let result = "";
-    const charactersLength = characters.length;
+    setTimeout(()=>{
+      const charactersLength = characters.length;
     for (let i = 0; i < length; i++) {
       result += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
     setLoading(false);
     setcCaptcha(result);
-    return result;
+    },2000)
   }
 
   useEffect(() => {
